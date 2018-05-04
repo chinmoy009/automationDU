@@ -1,9 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +23,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='//fonts.googleapis.com/css?family=Alegreya+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
-
+<script src ="js/anomsg.js"></script>
 
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
@@ -49,7 +44,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="navigation">
 				<div class="logo">
 					<h1>
-						<a class="navbar-brand link link--yaku" href="index.html"><span>D</span><span>U</span><span>F</span><span>I</span><span>T</span><span>N</span><span>E</span><span>S</span><span>S </span><span> </span><span>C</span><span>E</span><span>N</span><span>T</span><span>E</span><span>R</span></a>
+						<a class="navbar-brand link link--yaku" href="index.html"><span>D</span><span>U F</span><span>I</span><span>T</span><span>N</span><span>E</span><span>S</span><span>S C</span><span>E</span><span>N</span><span>T</span><span>E</span><span>R</span></a>
 					</h1>
 				</div>
 				<div class="top-nav">
@@ -57,7 +52,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<ul class="nav1 nav nav-wil cl-effect-11" id="cl-effect-11">
 						<li><a class="active" data-hover="HOME" href="index.html">HOME <span class="sr-only">(current)</span></a></li>
 						<li><a data-hover="ABOUT" href="about.html">ABOUT</a></li>
-						<li><a data-hover="COURSES" href="programs.html">COURSES</a></li>
+						<li><a data-hover="COURSES" href="courses.html">COURSES</a></li>
+						<li><a data-hover="FIELDS" href="fields.html">FIELDS</a></li>
 						<li><a data-hover="DEPARTMENTS" href="programs.html">DEPARTMENTS</a></li>
 						<li><a data-hover="CONTACT" href="contact.html">CONTACT</a></li>
 						
@@ -205,8 +201,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<h3>Leave Comment</h3>
 			<p>Send us feedback</p>
 			<form>
-				<input type="text" id = 'com' onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-				<input type="submit" >
+				<input type="text" id = 'com' required="">
+				<button  onclick = "sendMsg();">SEND </button>
 			</form>
 		</div>
 		<div class="clearfix"></div>

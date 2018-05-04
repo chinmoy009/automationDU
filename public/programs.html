@@ -1,9 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +28,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/firebaseDeclaration.js"></script>
 <script src="js/signout.js"></script>
 <script src ="js/hasUser.js"></script>
-
+<script src ="js/anomsg.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -52,7 +47,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="navigation">
 				<div class="logo">
 					<h1>
-						<a class="navbar-brand link link--yaku" href="index.html"><span>D</span><span>U</span><span>F</span><span>I</span><span>T</span><span>N</span><span>E</span><span>S</span><span>S </span><span> </span><span>C</span><span>E</span><span>N</span><span>T</span><span>E</span><span>R</span></a>
+						<a class="navbar-brand link link--yaku" href="index.html"><span>D</span><span>U F</span><span>I</span><span>T</span><span>N</span><span>E</span><span>S</span><span>S C</span><span>E</span><span>N</span><span>T</span><span>E</span><span>R</span></a>
 					</h1>
 				</div>
 				<div class="top-nav">
@@ -61,10 +56,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<li><a class="active" data-hover="HOME" href="index.html">HOME <span class="sr-only">(current)</span></a></li>
 						<li><a data-hover="ABOUT" href="about.html">ABOUT</a></li>
 						<li><a data-hover="COURSES" href="programs.html">COURSES</a></li>
+						<li><a data-hover="FIELDS" href="fields.html">FIELDS</a></li>
 						<li><a data-hover="DEPARTMENTS" href="programs.html">DEPARTMENTS</a></li>
-						<li><a data-hover="CONTACT" href="contact.html">CONTACT</a></li>
-						<li><a id='sout' onclick = "log_out();"></a></li>
 						<li><a id='sup'></a></li>
+						<li><a id='sout' onclick = "log_out();"></a></li>
+						<li><a data-hover="CONTACT" href="contact.html">CONTACT</a></li>
+						<li><a href="admintool.html" id = "ad"></a></li>
+						
 						
 					</ul>
 						<!-- script-for-menu -->
@@ -90,11 +88,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="gallery-bottom">
 			    <div class="view view-ninth">
 					<img src="images/g1.jpg" alt="">
-						<a class="example-image-link" href="images/g1.jpg" data-lightbox="example-1" data-title="FIT POINT">
+						<a href="swimming.html">
 							<div class="mask mask-1"></div>
 							<div class="mask mask-2"></div>
 							<div class="content">
-								<h4>DU FITNESS CENTER</h4>
+								<h4>SWIMMING</h4>
 								<p>Swimming is simply moving meditation.</p>
 								
 							</div>
@@ -102,22 +100,22 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
                 </div>
                 <div class="view view-ninth">
 					<img src="images/g2.jpg" alt="">
-                   <a class="example-image-link" href="images/g2.jpg" data-lightbox="example-1" data-title="FIT POINT">
+                   <a href="gym.html">
                     <div class="mask mask-1"></div>
                     <div class="mask mask-2"></div>
                     <div class="content">
-                        <h4>DU FITNESS CENTER</h4>
+                        <h4>GYM</h4>
                         <p>If you still look cute after gym, you didn't work hard enough</p>
                         
                     </div></a>
                 </div>
                 <div class="view view-ninth">
 					<img src="images/g3.jpg" alt="">
-                   <a class="example-image-link" href="images/g3.jpg" data-lightbox="example-1" data-title="FIT POINT">
+                   <a href="football.html" >
                     <div class="mask mask-1"></div>
                     <div class="mask mask-2"></div>
                     <div class="content">
-                        <h4>DU FITNESS CENTER</h4>
+                        <h4>FOOTBALL</h4>
                         <p>Football teaches you dedication, passion, responsibility, team work and leadership.</p>
                        
                     </div></a>
@@ -145,8 +143,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<h3>Leave Comment</h3>
 			<p>Send us feedback</p>
 			<form>
-				<input type="text" id = 'com' onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-				<input type="submit" >
+				<input type="text" id = 'com' required="">
+				<button  onclick = "sendMsg();">SEND </button>
 			</form>
 		</div>
 		<div class="clearfix"></div>
