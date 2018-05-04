@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>DU Fitness Center</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Vide" />
+<meta name="keywords" content="Fit Point Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- js -->
+   <script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- Custom Theme files -->
+<!--webfont-->
+<link href='//fonts.googleapis.com/css?family=Alegreya+Sans:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script src ="js/anomsg.js"></script>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+<body>
+<div class="page-head">
+	<div class="container">
+			<div class="navigation">
+				<div class="logo">
+					<h1>
+						<a class="navbar-brand link link--yaku" href="index.html"><span>D</span><span>U F</span><span>I</span><span>T</span><span>N</span><span>E</span><span>S</span><span>S C</span><span>E</span><span>N</span><span>T</span><span>E</span><span>R</span></a>
+					</h1>
+				</div>
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt=" " /></span>
+					<ul class="nav1 nav nav-wil cl-effect-11" id="cl-effect-11">
+						<li><a class="active" data-hover="HOME" href="index.html">HOME <span class="sr-only">(current)</span></a></li>
+						<li><a data-hover="ABOUT" href="about.html">ABOUT</a></li>
+						<li><a data-hover="COURSES" href="courses.html">COURSES</a></li>
+						<li><a data-hover="FIELDS" href="fields.html">FIELDS</a></li>
+						<li><a data-hover="DEPARTMENTS" href="programs.html">DEPARTMENTS</a></li>
+						<li><a data-hover="CONTACT" href="contact.html">CONTACT</a></li>
+						
+					</ul>
+						<!-- script-for-menu -->
+							<script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+						<!-- /script-for-menu -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+	</div>
+</div>
+
+<!-- registration-form -->
+<div class="registration-form">
+	<div class="container">
+		<h2 class="tittle">Registration</h3>
+		<div class="registration-grids">
+			<div class="reg-form">
+				<div class="reg">
+					 <form>
+						 <ul>
+							 <li class="text-info">First Name: </li>
+							 <li><input type="text" id="fn"></li>
+						 </ul>
+						 <ul>
+							 <li class="text-info">Last Name: </li>
+							 <li><input type="text" id = "ln"></li>
+						 </ul>
+                        <ul>
+							 <li class="text-info">User Name: </li>
+							 <li><input type="text" id = "un"></li>
+						 </ul>							 
+						<ul>
+							 <li class="text-info">Email: </li>
+							 <li><input type="text" id="em"></li>
+						 </ul>
+						 <ul>
+							 <li class="text-info">Gender:</li>
+							 <li></li>
+							 <li><input type="radio" id="r0" name="gender" value="male"> Male</li>
+							 <li><input type="radio" id="r5" name="gender" value="female"> Female</li>
+							 
+						 </ul>
+						 <ul>
+							 <li class="text-info">Password: </li>
+							 <li><input type="password" id="pass"></li>
+						 </ul>
+						 <ul>
+							 <li class="text-info">Re-enter Password:</li>
+							 <li><input type="password" id="pass2"></li>
+						 </ul>	
+                         <ul>
+							 <li class="text-info">Member Type:</li>
+							 <li></li>
+							 <li><input type="radio" id="r1" name="type" value="student"> Student</li>
+							 <li><input type="radio" id="r2" name="type" value="faculty"> Faculty</li>
+							 <li><input type="radio" id="r3" name="type" value="staff"> Staff </li>
+						 </ul>					 
+						 <input type="button" value="REGISTER NOW" onclick ="user_doSomething();">
+						 <p class="click">All ready have an account ?. <a href="#" data-toggle="modal" data-target="#myModal"> Login Here</a></p> 
+					 </form>
+				 </div>
+			</div>
+			
+			<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+			<script src="js/signup.js"> </script>
+			
+			
+			<div class="reg-right">
+				 <h3>Completely Free Account</h3>
+				 
+				 <p>You need a member account for enjoying all the facilities</p>
+				 
+				 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- registration-form -->
+<!-- login -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="login-grids">
+								<div class="login">
+									<div class="login-left">
+										<ul>
+											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+										</ul>
+									</div>
+									<div class="login-right">
+										<form>
+											<h3>Signin with your account </h3>
+											<input type="text" placeholder="Enter your email" id= "em2"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">	
+											<input type="password" placeholder="password" id = "pass3" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<h4><a href="#">Forgot password</a> / <a href="#">Create new password</a></h4>
+											<div class="single-bottom">
+												<input type="checkbox"  id="brand" value="">
+												<label for="brand"><span></span>Remember Me.</label>
+											</div>
+											<input type="button" value="SIGNIN" onclick="login_func();">
+										</form>
+									</div>
+									<div class="clearfix"></div>								
+								</div>
+								<p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<script src="js/signin.js"></script>"
+
+			<!-- //login -->
+<!--footer-top-->
+<div class="footer-top">
+	<div class="container">
+		<div class="footer-left">
+			<h3>INFORMATION</h3>
+			<p>This site is all about automating the procedure of being member or booking ground. For more information you can call or mail.</p>
+			<ul>
+				<li>DU Fitness Center <span>Opposite of Mokarrom Bhaban, </span>Ramna, Dhaka  </li>
+				<li>123456789 </li>
+				<li><a href="mailto:info@example.com">contact@example.com</a> </li>
+			</ul>
+		</div>
+		
+		<div class="footer-right">
+			<h3>Leave Comment</h3>
+			<p>Send us feedback</p>
+			<form>
+				<input type="text" id = 'com' required="">
+				<button  onclick = "sendMsg();">SEND </button>
+			</form>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//footer-top-->
+<!--copy right-->
+<div class="copyright">
+	<div class="container">
+		<div class="copy-left">
+			<p> &copy; 2016 Fit Point. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+		</div>
+		<div class="copy-right">
+			<ul>
+				<li><a class="fb1" href="#"></a></li>
+				<li><a class="fb2" href="#"></a></li>
+				<li><a class="fb3" href="#"></a></li>
+				<li><a class="fb4" href="#"></a></li>
+				<li><a class="fb5" href="#"></a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//copy right-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+
+</body>
+</html>
